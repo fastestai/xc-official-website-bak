@@ -1,4 +1,4 @@
-FROM node:16-alpine
+FROM node:20-alpine
 
 WORKDIR /app
 
@@ -13,4 +13,3 @@ RUN npm run build
 EXPOSE 3000
 
 CMD ["npm", "start"]
-

@@ -1,0 +1,57 @@
+env:
+  SERVICE_NAME: xc-official-website
+  IMAGES_NAME: xc-official-website
+  BRANCHES: main
+  IMAGES_TAG: main
+  REGISTRY: footprint-registry.tencentcloudcr.com
+  REGISTRY_NAMESPACE:  xc
+  K8S_NAMESPACE: xc
+  SLACK_WEBHOOK_URL: "https://hooks.slack.com/services/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"
+  DOCKER_USERNAME: "200032565801"
+  DOCKER_PASSWORD: "eyJhbGciOiJSUzI1NiIsImtpZCI6IldVWk46V0E2Rjo2WVBXOkRDUk06Slc0VTpYRVZZOlVWT1E6QUlWRDpZVUJEOlFBVkw6NDZYSzpJRFBUIn0.eyJvd25lclVpbiI6IjIwMDAzMDk5ODMxNiIsIm9wZXJhdG9yVWluIjoiMjAwMDMyNTY1ODAxIiwidG9rZW5JZCI6ImNtZ2QxNW03MDY2NmRsZ3NiZXBnIiwiZXhwIjoyMDIwMzk3OTc0LCJuYmYiOjE3MDUwMzc5NzQsImlhdCI6MTcwNTAzNzk3NH0.VhF2kluA-q4kogf2oAOVEmvQPy3WsrbzAKaQ7yF9O2bSJEAUurzWTSRUmSlCyFWO8CHH_TREVHGTy1Wo2DVBZNFUv4r5ssRkrYLQfvWBTzQMiduA1x_V85h2k1VrvliY3jXqSTdijALgb0oFXKW8IXnDa85EtSCvOn71DUIiFszEC-HEyqs8F4pvuafzUlpwTD-HU8Fv4XQFSps48NpOJ6uAmxMNJnjpRFsl3wZ6wOngcBd2YYHU2iJv8eRqdT_xnIJcMHkcSLPz2RS0wci68ZUgNFWVtnRr2N_qx0CSm7vW8pFRR6IoqOjJhANOcaxSEUNbC-HP9UYMpgSaSCcN-A"
+
+name: main
+on:
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: 'Branch name'
+        required: true
+        default: 'main'
+
+jobs:
+  build:
+    # runs-on: fe
+    runs-on: runner
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+         ref: ${{ github.event.inputs.branch }}
+
+      - name: Build images
+        run: |
+          docker build --platform=linux/amd64 -f Dockerfile -t ${{ env.REGISTRY }}/${{ env.REGISTRY_NAMESPACE }}/${{ env.IMAGES_NAME }}:${{ env.IMAGES_TAG }} .
+          echo "构建镜像完成"
+
+      - name: Login docker hub
+        uses: docker/login-action@v2
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ env.DOCKER_USERNAME }}
+          password: ${{ env.DOCKER_PASSWORD }}
+
+      - name: Push docker image
+        run: docker push ${{ env.REGISTRY }}/${{ env.REGISTRY_NAMESPACE }}/${{ env.IMAGES_NAME }}:${{ env.IMAGES_TAG }}
+
+      - name: Kubernetes context
+        uses: Azure/k8s-set-context@v1
+        with:
+          method: kubeconfig
+          kubeconfig: ${{ secrets.KUBE_CONFIG }}
+          namespace: xc
+
+      - name: Deploy
+        run: kubectl rollout restart deployment ${{ env.SERVICE_NAME }} -n ${{ env.K8S_NAMESPACE }}
+        id: deploy
+        continue-on-error: true

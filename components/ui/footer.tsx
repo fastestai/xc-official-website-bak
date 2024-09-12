@@ -27,7 +27,7 @@ export default function Footer() {
               <li>
                 <a
                   className="text-indigo-200/65 transition hover:text-indigo-500"
-                  href="#0"
+                  href="https://doc.xcelsior.ai/features"
                 >
                   Features
                 </a>
@@ -35,9 +35,9 @@ export default function Footer() {
               <li>
                 <a
                   className="text-indigo-200/65 transition hover:text-indigo-500"
-                  href="#0"
+                  href="https://doc.xcelsior.ai/integration"
                 >
-                  Integrations
+                  Integration
                 </a>
               </li>
               <li>
@@ -51,25 +51,9 @@ export default function Footer() {
               <li>
                 <a
                   className="text-indigo-200/65 transition hover:text-indigo-500"
-                  href="#0"
+                  href="https://doc.xcelsior.ai/changelog"
                 >
                   Changelog
-                </a>
-              </li>
-              <li>
-                <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
-                  href="#0"
-                >
-                  Our method
-                </a>
-              </li>
-              <li>
-                <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
-                  href="#0"
-                >
-                  User policy
                 </a>
               </li>
             </ul>
@@ -81,41 +65,9 @@ export default function Footer() {
               <li>
                 <a
                   className="text-indigo-200/65 transition hover:text-indigo-500"
-                  href="#0"
+                  href="https://www.linkedin.com/company/xcelsior-ai/"
                 >
                   About us
-                </a>
-              </li>
-              <li>
-                <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
-                  href="#0"
-                >
-                  Diversity &amp; Inclusion
-                </a>
-              </li>
-              <li>
-                <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
-                  href="#0"
-                >
-                  Blog
-                </a>
-              </li>
-              <li>
-                <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
-                  href="#0"
-                >
-                  Careers
-                </a>
-              </li>
-              <li>
-                <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
-                  href="#0"
-                >
-                  Financial statements
                 </a>
               </li>
             </ul>
@@ -127,7 +79,7 @@ export default function Footer() {
               <li>
                 <a
                   className="text-indigo-200/65 transition hover:text-indigo-500"
-                  href="#0"
+                  href="https://doc.xcelsior.ai/contact"
                 >
                   Community
                 </a>
@@ -135,7 +87,7 @@ export default function Footer() {
               <li>
                 <a
                   className="text-indigo-200/65 transition hover:text-indigo-500"
-                  href="#0"
+                  href="https://doc.xcelsior.ai/legal/terms-of-service"
                 >
                   Terms of service
                 </a>
@@ -143,9 +95,9 @@ export default function Footer() {
               <li>
                 <a
                   className="text-indigo-200/65 transition hover:text-indigo-500"
-                  href="#0"
+                  href="https://doc.xcelsior.ai/legal/privacy-policy"
                 >
-                  Report a vulnerability
+                  Privacy Policy
                 </a>
               </li>
             </ul>
@@ -159,7 +111,7 @@ export default function Footer() {
               <li>
                 <a
                   className="text-indigo-200/65 transition hover:text-indigo-500"
-                  href="#0"
+                  href="https://docs.google.com/spreadsheets/u/1/d/168DWlbtSNYIaYmWWD_RrMG3xanNHOJFqOZeS8UG7RQw/edit?gid=0#gid=0"
                 >
                   Templates
                 </a>
@@ -167,33 +119,9 @@ export default function Footer() {
               <li>
                 <a
                   className="text-indigo-200/65 transition hover:text-indigo-500"
-                  href="#0"
+                  href="https://doc.xcelsior.ai/"
                 >
                   Tutorials
-                </a>
-              </li>
-              <li>
-                <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
-                  href="#0"
-                >
-                  Knowledge base
-                </a>
-              </li>
-              <li>
-                <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
-                  href="#0"
-                >
-                  Learn
-                </a>
-              </li>
-              <li>
-                <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
-                  href="#0"
-                >
-                  Cookie manager
                 </a>
               </li>
             </ul>
@@ -205,20 +133,13 @@ export default function Footer() {
             </div>
             <div className="text-sm">
               <p className="mb-3 text-indigo-200/65">
-                © Cruip.com
-                <span className="text-gray-700"> · </span>
-                <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
-                  href="#0"
-                >
-                  Terms
-                </a>
+                ©XCelsior.ai
               </p>
               <ul className="inline-flex gap-1">
                 <li>
                   <a
                     className="flex items-center justify-center text-indigo-500 transition hover:text-indigo-400"
-                    href="#0"
+                    href="https://twitter.com/@XCelsiorAI"
                     aria-label="Twitter"
                   >
                     <svg
@@ -233,7 +154,7 @@ export default function Footer() {
                 <li>
                   <a
                     className="flex items-center justify-center text-indigo-500 transition hover:text-indigo-400"
-                    href="#0"
+                    href="https://medium.com/@XCelsiorAI"
                     aria-label="Medium"
                   >
                     <svg
@@ -248,7 +169,7 @@ export default function Footer() {
                 <li>
                   <a
                     className="flex items-center justify-center text-indigo-500 transition hover:text-indigo-400"
-                    href="#0"
+                    href="https://github.com/fastestai"
                     aria-label="Github"
                   >
                     <svg

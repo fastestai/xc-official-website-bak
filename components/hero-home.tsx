@@ -13,7 +13,7 @@ export default function HeroHome() {
               className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,theme(colors.gray.200),theme(colors.indigo.200),theme(colors.gray.50),theme(colors.indigo.300),theme(colors.gray.200))] bg-[length:200%_auto] bg-clip-text pb-5 font-nacelle text-4xl font-semibold text-transparent md:text-5xl"
               data-aos="fade-up"
             >
-              What is XCelsior AI: GPT for Sheets™?
+              Where AI meets spreadsheets
             </h1>
             <div className="mx-auto max-w-3xl">
               <p
@@ -21,21 +21,14 @@ export default function HeroHome() {
                 data-aos="fade-up"
                 data-aos-delay={200}
               >
-                XCelsior AI: GPT for Sheets™ with Gemini, OpenAI Boost your efficiency with AI-driven insights and confident answers in Google Sheets™ using ChatGPT and Gemini.
+                Boosts your efficiency with AI-driven insights and confident answers in Google Sheets™.
               </p>
-              <p
-                className="mb-8 text-xl text-indigo-200/65"
-                data-aos="fade-up"
-                data-aos-delay={400}
-              >
-                XCelsior AI transforms Google Sheets™ with advanced AI, integrating external information seamlessly. Leverage community-contributed prompts and functions for enhanced insights and automation. Analyze, summarize data faster and more accurately with XCelsior AI, your ultimate tool for smarter, data-driven insights.
-              </p>
+              
               <p
                 className="mb-8 text-xl text-indigo-200/65"
                 data-aos="fade-up"
                 data-aos-delay={600}
               >
-                Watch this video to learn how to use XCelsiorAI to boost your efficiency and streamline your workflow:
               </p>
               <ModalVideo
                 thumb={VideoThumb}
@@ -76,19 +69,7 @@ export default function HeroHome() {
             </div>
           </div>
 
-          <div className="mx-auto max-w-3xl text-left" data-aos="fade-up">
-            <h2 className="text-3xl font-semibold text-white">
-              Why choose XCelsior AI: GPT for Sheets™?
-            </h2>
-            <ul className="mt-6 space-y-4 text-xl text-indigo-200/65">
-              <li>✅ No sign-up required</li>
-              <li>💎 Free with premium features</li>
-              <li>🔑 No API key required</li>
-              <li>💰 No Recalculation Fees</li>
-              <li>🌐 Support Community-Contributed Prompts and Functions (UDF)</li>
-              <li>📂 Support Upload Private Docs and Evernote-Like Clipper</li>
-            </ul>
-          </div>
+          
         </div>
       </div>
     </section>

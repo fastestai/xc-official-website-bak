@@ -82,11 +82,11 @@ export default function HeroHome() {
             </h2>
             <ul className="mt-6 space-y-4 text-xl text-indigo-200/65">
               <li>✅ No sign-up required</li>
-              <li>✅ Free with premium features</li>
-              <li>✅ No API key required</li>
-              <li>✅ No Recalculation Fees</li>
-              <li>✅ Support Community-Contributed Prompts and Functions (UDF)</li>
-              <li>✅ Support Upload Private Docs and Evernote-Like Clipper</li>
+              <li>💎 Free with premium features</li>
+              <li>🔑 No API key required</li>
+              <li>💰 No Recalculation Fees</li>
+              <li>🌐 Support Community-Contributed Prompts and Functions (UDF)</li>
+              <li>📂 Support Upload Private Docs and Evernote-Like Clipper</li>
             </ul>
           </div>
         </div>

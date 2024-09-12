@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Home - XCelsior",
-  description: "Page description",
+  title: "XCelsior AI: GPT for Sheets™ - Boost Your Efficiency with AI",
+  description: "Enhance your Google Sheets™ experience with XCelsior AI. Leverage AI-driven insights and automation for smarter, data-driven decisions.",
 };
 
 import PageIllustration from "@/components/page-illustration";

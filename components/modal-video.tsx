@@ -1,9 +1,10 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState } from "react";
 import type { StaticImageData } from "next/image";
 import { Dialog, DialogBackdrop, DialogPanel } from "@headlessui/react";
 import Image from "next/image";
+import YouTube from "react-youtube";
 import SecondaryIllustration from "@/public/images/secondary-illustration.svg";
 
 interface ModalVideoProps {
@@ -11,9 +12,7 @@ interface ModalVideoProps {
   thumbWidth: number;
   thumbHeight: number;
   thumbAlt: string;
-  video: string;
-  videoWidth: number;
-  videoHeight: number;
+  videoId: string; // Change this to videoId
 }
 
 export default function ModalVideo({
@@ -21,12 +20,9 @@ export default function ModalVideo({
   thumbWidth,
   thumbHeight,
   thumbAlt,
-  video,
-  videoWidth,
-  videoHeight,
+  videoId, // Change this to videoId
 }: ModalVideoProps) {
   const [modalOpen, setModalOpen] = useState<boolean>(false);
-  const videoRef = useRef<HTMLVideoElement>(null);
 
   return (
     <div className="relative">
@@ -104,7 +100,6 @@ export default function ModalVideo({
       {/* End: Video thumbnail */}
 
       <Dialog
-        initialFocus={videoRef}
         open={modalOpen}
         onClose={() => setModalOpen(false)}
       >
@@ -112,22 +107,23 @@ export default function ModalVideo({
           transition
           className="fixed inset-0 z-[99999] bg-black/70 transition-opacity duration-300 ease-out data-[closed]:opacity-0"
         />
-        <div className="fixed inset-0 z-[99999] flex px-4 py-6 sm:px-6">
-          <div className="mx-auto flex h-full max-w-6xl items-center">
+        <div className="fixed inset-0 z-[99999] flex items-center justify-center px-4 py-6 sm:px-6">
+          <div className="relative w-full max-w-6xl">
             <DialogPanel
               transition
-              className="aspect-video max-h-full w-full overflow-hidden rounded-2xl bg-black shadow-2xl duration-300 ease-out data-[closed]:scale-95 data-[closed]:opacity-0"
+              className="aspect-video w-full overflow-hidden rounded-2xl bg-black shadow-2xl duration-300 ease-out data-[closed]:scale-95 data-[closed]:opacity-0"
             >
-              <video
-                ref={videoRef}
-                width={videoWidth}
-                height={videoHeight}
-                loop
-                controls
-              >
-                <source src={video} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+              <YouTube
+                videoId={videoId}
+                opts={{
+                  width: '100%',
+                  height: '100%',
+                  playerVars: {
+                    autoplay: 1,
+                  },
+                }}
+                className="w-full h-full"
+              />
             </DialogPanel>
           </div>
         </div>

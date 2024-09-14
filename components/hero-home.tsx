@@ -35,7 +35,7 @@ export default function HeroHome() {
                 thumbWidth={1104}
                 thumbHeight={576}
                 thumbAlt="Modal video thumbnail"
-                videoId="BDY5CtgbAzM"  // YouTube video ID
+                videoId="coFvNmr6oUA"  // YouTube video ID
               />
               <div className="mt-8 mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center">
   <div data-aos="fade-up" data-aos-delay={800}>
@@ -44,7 +44,7 @@ export default function HeroHome() {
       href="https://workspace.google.com/marketplace/app/xcelsior_ai_gpt_for_sheets_with_gemini_o/953720034790" target="_blank"  rel="noopener noreferrer"
     >
       <span className="relative inline-flex items-center">
-      Unlock Power Tools
+      Install the Power Tools
         <span className="ml-1 tracking-normal text-white/50 transition-transform group-hover:translate-x-0.5">
           -&gt;
         </span>
@@ -57,7 +57,7 @@ export default function HeroHome() {
       href="https://doc.xcelsior.ai/"  target="_blank"  rel="noopener noreferrer"
     >
       <span className="relative inline-flex items-center">
-      Master the Features
+      Read the Docs
         <span className="ml-1 tracking-normal text-gray-300/50 transition-transform group-hover:translate-x-0.5">
           -&gt;
         </span>

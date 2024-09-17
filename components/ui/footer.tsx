@@ -139,7 +139,7 @@ export default function Footer() {
                 <li>
                   <a
                     className="flex items-center justify-center text-indigo-500 transition hover:text-indigo-400"
-                    href="https://twitter.com/@XCelsiorAI"
+                    href="https://twitter.com/@XCelsior AI"
                     aria-label="Twitter"
                   >
                     <svg
@@ -154,7 +154,7 @@ export default function Footer() {
                 <li>
                   <a
                     className="flex items-center justify-center text-indigo-500 transition hover:text-indigo-400"
-                    href="https://medium.com/@XCelsiorAI"
+                    href="https://medium.com/@XCelsior AI"
                     aria-label="Medium"
                   >
                     <svg

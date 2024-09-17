@@ -11,7 +11,7 @@ export default function Header() {
           {/* Site branding */}
           <div className="flex items-center">
             <Logo />
-            <span className="ml-2 text-white text-xl font-bold">XCelsiorAI</span>
+            <span className="ml-2 text-white text-xl font-bold">XCelsior AI</span>
           </div>
         </div>
       </div>

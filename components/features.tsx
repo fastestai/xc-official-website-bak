@@ -40,7 +40,7 @@ export default function Features() {
               </span>
             </div>
             <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,theme(colors.gray.200),theme(colors.indigo.200),theme(colors.gray.50),theme(colors.indigo.300),theme(colors.gray.200))] bg-[length:200%_auto] bg-clip-text pb-4 font-nacelle text-3xl font-semibold text-transparent md:text-4xl">
-            Transforms Your Work with XCelsiorAI 
+            Transforms Your Work with XCelsior AI 
             </h2>
           </div>
           <div className="flex justify-center pb-4 md:pb-12" data-aos="fade-up">
@@ -54,26 +54,7 @@ export default function Features() {
           </div>
           {/* Items */}
           <div className="mx-auto grid max-w-sm gap-12 sm:max-w-none sm:grid-cols-2 md:gap-x-14 md:gap-y-16 lg:grid-cols-3">
-            <article>
-              <svg
-                className="mb-3 fill-indigo-500"
-                xmlns="http://www.w3.org/2000/svg"
-                width={24}
-                height={24}
-              >
-                <path d="M0 0h14v17H0V0Zm2 2v13h10V2H2Z" />
-                <path
-                  fillOpacity=".48"
-                  d="m16.295 5.393 7.528 2.034-4.436 16.412L5.87 20.185l.522-1.93 11.585 3.132 3.392-12.55-5.597-1.514.522-1.93Z"
-                />
-              </svg>
-              <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
-              Diverse Prompts and Function
-              </h3>
-              <p className="text-indigo-200/65">
-              Access a library of community-contributed tools for tasks like data analysis, summarization, and reporting.
-              </p>
-            </article>
+            
             <article>
               <svg
                 className="mb-3 fill-indigo-500"
@@ -85,10 +66,10 @@ export default function Features() {
                 <path d="M19 6H0v2h17v8H7v-6H5v8h19v-2h-5V6Z" />
               </svg>
               <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
-              Automation
+              Automated Workflows
               </h3>
               <p className="text-indigo-200/65">
-              Save time and reduce errors by automating repetitive tasks.
+              Automate tasks and create custom workflows, increasing productivity to 10x.
               </p>
             </article>
             <article>
@@ -105,10 +86,10 @@ export default function Features() {
                 />
               </svg>
               <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
-              Custom Workflows
+              Accurate Answers
               </h3>
               <p className="text-indigo-200/65">
-              Create tailored workflows by combining multiple prompts and functions for increased efficiency.
+              Our confidence checker reduces errors, saving hours every day.
               </p>
             </article>
             <article>
@@ -130,10 +111,10 @@ export default function Features() {
                 <path d="m16.321 2-.5-.866 1.733-1 .5.866A22 22 0 0 1 21 12c0 3.852-1.017 7.636-2.948 10.97l-.502.865-1.73-1.003.501-.865A19.878 19.878 0 0 0 19 12a20 20 0 0 0-2.679-10Z" />
               </svg>
               <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
-              Confidence Level Checking
+              Secure Data Encryption
               </h3>
               <p className="text-indigo-200/65">
-              Use large language models to ensure the reliability of insights.
+              Encrypt files to keep your data private and not used for training.
               </p>
             </article>
             <article>
@@ -150,10 +131,10 @@ export default function Features() {
                 <path d="m7.454 2.891.891-.454L7.437.655l-.891.454a12 12 0 0 0 0 21.382l.89.454.91-1.781-.892-.455a10 10 0 0 1 0-17.818ZM17.456 1.11l-.891-.454-.909 1.782.891.454a10 10 0 0 1 0 17.819l-.89.454.908 1.781.89-.454a12 12 0 0 0 0-21.382Z" />
               </svg>
               <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
-              Reference Checking
+              Instant Insights
               </h3>
               <p className="text-indigo-200/65">
-              Verify useful references down to specific chunks of a document for precise information.
+              Analyze and summarize findings in seconds, and generate reports with one click.
               </p>
             </article>
             <article>
@@ -170,10 +151,30 @@ export default function Features() {
                 <path d="M19.406 3.844 6.083 20.497.586 15 2 13.586l3.917 3.917L17.844 2.595l1.562 1.25Z" />
               </svg>
               <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
-              Document Upload
+              Versatile Data Handling
               </h3>
               <p className="text-indigo-200/65">
-              Securely upload text files, PDFs, and images for easy access.
+              Easily work with text files, PDFs, images, etc.
+              </p>
+            </article>
+            <article>
+              <svg
+                className="mb-3 fill-indigo-500"
+                xmlns="http://www.w3.org/2000/svg"
+                width={24}
+                height={24}
+              >
+                <path d="M0 0h14v17H0V0Zm2 2v13h10V2H2Z" />
+                <path
+                  fillOpacity=".48"
+                  d="m16.295 5.393 7.528 2.034-4.436 16.412L5.87 20.185l.522-1.93 11.585 3.132 3.392-12.55-5.597-1.514.522-1.93Z"
+                />
+              </svg>
+              <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
+              Diverse Prompts and Function
+              </h3>
+              <p className="text-indigo-200/65">
+              Access a library of community-contributed tools for tasks like data analysis, summarization, and reporting.
               </p>
             </article>
           </div>

@@ -6,6 +6,7 @@ import { Dialog, DialogBackdrop, DialogPanel } from "@headlessui/react";
 import Image from "next/image";
 import YouTube from "react-youtube";
 import SecondaryIllustration from "@/public/images/secondary-illustration.svg";
+import { sendGAEvent } from '@next/third-parties/google'
 
 interface ModalVideoProps {
   thumb: StaticImageData;
@@ -45,6 +46,7 @@ export default function ModalVideo({
         className="group relative flex items-center justify-center rounded-2xl focus:outline-none focus-visible:ring focus-visible:ring-indigo-200"
         onClick={() => {
           setModalOpen(true);
+          sendGAEvent('event', 'buttonClicked', { value: 'Watch Video' });
         }}
         aria-label="Watch the video"
         data-aos="fade-up"

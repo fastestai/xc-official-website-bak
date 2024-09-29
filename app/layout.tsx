@@ -1,5 +1,6 @@
 import "./css/style.css";
 
+import { GoogleAnalytics } from '@next/third-parties/google'
 import { Inter } from "next/font/google";
 import localFont from "next/font/local";
 import Head from "next/head";
@@ -56,6 +57,7 @@ export default function RootLayout({
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
       </Head>
+      <GoogleAnalytics gaId="G-TBRCRMYC9S" />
       <body
         className={`${inter.variable} ${nacelle.variable} bg-gray-950 font-inter text-base text-gray-200 antialiased`}
       >
@@ -64,6 +66,7 @@ export default function RootLayout({
           {children}
         </div>
       </body>
+      
     </html>
   );
 }

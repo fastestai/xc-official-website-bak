@@ -1,10 +1,17 @@
 'use client';
-
-import VideoThumb from "@/public/images/banner-low.jpg";
-import ModalVideo from "@/components/modal-video";
+import { useEffect, useState } from 'react';
+// import VideoThumb from "@/public/images/banner-low.jpg";
+// import ModalVideo from "@/components/modal-video";
+import YouTube from 'react-youtube';
 import { sendGTMEvent } from '@next/third-parties/google'
 
 export default function HeroHome() {
+  const [modalOpen, setModalOpen] = useState<boolean>(false);
+
+  useEffect(() => {
+    setModalOpen(true);
+  }, []);
+
   return (
     <section>
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
@@ -33,13 +40,20 @@ export default function HeroHome() {
                 data-aos-delay={600}
               >
               </p>
-              <ModalVideo
-                thumb={VideoThumb}
-                thumbWidth={1104}
-                thumbHeight={576}
-                thumbAlt="Modal video thumbnail"
-                videoId="coFvNmr6oUA"  // YouTube video ID
-              />
+              <div className="relative mb-8">
+                <YouTube
+                  videoId="coFvNmr6oUA"  // YouTube video ID
+                  opts={{
+                    width: '100%',
+                    height: '576px',
+                    playerVars: {
+                      autoplay: 1,
+                      mute: 1,
+                    },
+                  }}
+                  className="w-full h-full"
+                />
+              </div>
               <div className="mt-8 mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center">
   <div data-aos="fade-up" data-aos-delay={800}>
     <a

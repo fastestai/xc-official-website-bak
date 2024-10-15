@@ -35,9 +35,9 @@ export default function Footer() {
               <li>
                 <a
                   className="text-indigo-200/65 transition hover:text-indigo-500"
-                  href="https://doc.xcelsior.ai/integration"
+                  href="https://cutt.ly/xePHXz5E"
                 >
-                  Integration
+                  Install
                 </a>
               </li>
               <li>
@@ -111,7 +111,7 @@ export default function Footer() {
               <li>
                 <a
                   className="text-indigo-200/65 transition hover:text-indigo-500"
-                  href="https://docs.google.com/spreadsheets/u/1/d/168DWlbtSNYIaYmWWD_RrMG3xanNHOJFqOZeS8UG7RQw/edit?gid=0#gid=0"
+                  href="https://cutt.ly/iePHX74y"
                 >
                   Templates
                 </a>

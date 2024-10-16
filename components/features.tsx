@@ -64,7 +64,7 @@ export default function Features() {
               </div>
               <div className="flex-1 flex items-center justify-center md:justify-end md:max-w-[50%]">
                 <div className="w-[500px] h-[300px] bg-gray-200 flex items-center justify-center">
-                  <a style={{ display: 'inline-block', width: '100%', height: '100%' }} target="_blank" rel="noopener noreferrer" href="https://docs.google.com/spreadsheets/d/168DWlbtSNYIaYmWWD_RrMG3xanNHOJFqOZeS8UG7RQw/edit?gid=208590972#gid=208590972">
+                  <a style={{ display: 'inline-block', width: '100%', height: '100%' }} target="_blank" rel="noopener noreferrer" href="https://cutt.ly/ueSsSDHf">
                   <Image
                     src={AutomatedGif}
                     alt="Automated Workflows"
@@ -88,7 +88,7 @@ export default function Features() {
               </div>
               <div className="flex-1 flex items-center justify-center md:justify-end md:max-w-[50%]">
                 <div className="w-[500px] h-[300px] bg-gray-200 flex items-center justify-center">
-                <a style={{ display: 'inline-block', width: '100%', height: '100%' }} href="https://docs.google.com/spreadsheets/d/168DWlbtSNYIaYmWWD_RrMG3xanNHOJFqOZeS8UG7RQw/edit?gid=566872719#gid=566872719" target="_blank" rel="noopener noreferrer">
+                <a style={{ display: 'inline-block', width: '100%', height: '100%' }} href="https://cutt.ly/IeSsGOOu" target="_blank" rel="noopener noreferrer">
                   <Image
                     src={Acurrate}
                     alt="Accurate Answers"
@@ -112,7 +112,7 @@ export default function Features() {
               </div>
               <div className="flex-1 flex items-center justify-center md:justify-end md:max-w-[50%]">
                 <div className="w-[500px] h-[300px] bg-gray-200 flex items-center justify-center">
-                <a style={{ display: 'inline-block', width: '100%', height: '100%' }} href="https://docs.google.com/spreadsheets/d/168DWlbtSNYIaYmWWD_RrMG3xanNHOJFqOZeS8UG7RQw/edit?gid=359471827#gid=359471827" target="_blank" rel="noopener noreferrer">
+                <a style={{ display: 'inline-block', width: '100%', height: '100%' }} href="https://cutt.ly/GeSsHQtI" target="_blank" rel="noopener noreferrer">
                   <Image
                     src={Instant}
                     alt="Instant Insights"

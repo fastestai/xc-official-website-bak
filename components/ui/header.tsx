@@ -36,7 +36,7 @@ export default function Header() {
                 <li>
                   <Link
                     target="_blank"
-                    href="https://docs.google.com/spreadsheets/d/168DWlbtSNYIaYmWWD_RrMG3xanNHOJFqOZeS8UG7RQw/edit?gid=441040677#gid=441040677"
+                    href="https://cutt.ly/VeSsY4BF"
                     className="block px-4 py-2 text-white hover:bg-gray-800 whitespace-nowrap"
                   >
                     Stock economics metrics
@@ -45,7 +45,7 @@ export default function Header() {
                 <li>
                   <Link
                     target="_blank"
-                    href="https://docs.google.com/spreadsheets/d/168DWlbtSNYIaYmWWD_RrMG3xanNHOJFqOZeS8UG7RQw/edit?gid=1204113864#gid=1204113864"
+                    href="https://cutt.ly/4eSsApji"
                     className="block px-4 py-2 text-white hover:bg-gray-800 whitespace-nowrap"
                   >
                     Stock complex metrics comparison
@@ -54,7 +54,7 @@ export default function Header() {
                 <li>
                   <Link
                     target="_blank"
-                    href="https://docs.google.com/spreadsheets/d/168DWlbtSNYIaYmWWD_RrMG3xanNHOJFqOZeS8UG7RQw/edit?gid=208590972#gid=208590972&range=F3"
+                    href="https://cutt.ly/ueSsSDHf"
                     className="block px-4 py-2 text-white hover:bg-gray-800 whitespace-nowrap"
                   >
                     Crypto project metrics and comparison
@@ -63,7 +63,7 @@ export default function Header() {
                 <li>
                   <Link
                     target="_blank"
-                    href="https://docs.google.com/spreadsheets/d/168DWlbtSNYIaYmWWD_RrMG3xanNHOJFqOZeS8UG7RQw/edit?gid=208590972#gid=208590972&range=F3"
+                    href="https://cutt.ly/FeSsDHmc"
                     className="block px-4 py-2 text-white hover:bg-gray-800 whitespace-nowrap"
                   >
                     AI apps marketing research 
@@ -72,7 +72,7 @@ export default function Header() {
                 <li>
                   <Link
                     target="_blank"
-                    href="https://docs.google.com/spreadsheets/d/168DWlbtSNYIaYmWWD_RrMG3xanNHOJFqOZeS8UG7RQw/edit?gid=1187446970#gid=1187446970&range=F4"
+                    href="https://cutt.ly/peSsFcj5"
                     className="block px-4 py-2 text-white hover:bg-gray-800 whitespace-nowrap"
                   >
                     More...

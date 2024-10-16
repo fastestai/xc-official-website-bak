@@ -80,7 +80,7 @@ export default function Features() {
             <div className="flex flex-col md:flex-row items-start md:items-start gap-8 w-full">
               <div className="flex-1 md:max-w-[50%]">
                 <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
-                  Accurate Answers
+                Confident Answers
                 </h3>
                 <p className="text-indigo-200/65">
                   Our confidence checker reduces errors, saving hours every day.

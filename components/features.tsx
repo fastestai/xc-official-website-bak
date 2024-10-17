@@ -5,7 +5,7 @@ import AutomatedGif from "@/public/images/automated.gif";
 import Acurrate from "@/public/images/accurate.png";
 
 import Instant from "@/public/images/instant.png";
-import Versatile from "@/public/images/versatile.png";
+import Versatile from "@/public/images/versatile.jpg";
 
 import Secure from "@/public/images/secure.webp";
 import Diverse from "@/public/images/diverse.png";

@@ -31,7 +31,7 @@ export default function HeroHome() {
                 data-aos="fade-up"
                 data-aos-delay={200}
               >
-                Boosts your efficiency with AI-driven insights and confident answers in Google Sheets™.
+                Boosts your efficiency with AI-driven insights and confident answers in Google Sheets™ and more.
               </p>
               <div className="mt-8 mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center">
                 <div data-aos="fade-up" data-aos-delay={800}>
